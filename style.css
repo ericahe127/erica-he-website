@@ -1,3 +1,62 @@
 .font-serif {
     font-family: 'SerifFont', serif;
 }
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.contact-footer{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+}
+
+.contact-title{
+    text-align: center;
+}
+
+.contact-img{
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    width: 40%;
+    height: 40%;
+}
+
+.button-flex-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.carousel-caption{
+    color: black;
+}
+
+/* .carousel .carousel-item {
+    height: 40rem;
+} */
+
+/* .carousel-item img {
+    object-fit: cover;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 20rem;
+    max-width:max-content;
+}  */
+
+.carousel .carousel-indicators .active {
+    background-color:bisque;
+}
