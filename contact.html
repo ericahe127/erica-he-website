@@ -18,6 +18,8 @@
     </div>
 
     <div class="row mt-5 justify-content-center">
+
+        <!-- Proile Info -->
         <div class="card col-12 col-sm-6 col-lg-6 px-5 mb-3" style="width: 25rem; border: 1px solid bs-dark;">
                 <h3 class="contact-title my-3" style="font-weight: 600; font-size:xx-large;">Erica He</h3>
                 <img src="asset/erica-profile-2.jpg"  alt="erica-profile-img" class="contact-img" >
@@ -35,30 +37,38 @@
                     </svg> LinkedIn</a>
                 </div>
         </div>
+
+        <!-- form -->
         <div class="col-12 col-sm-6 col-lg-6 px-5">
-            <div class="mb-3 " style="width: fit-content;">
+            <form id="my-form" action="https://formspree.io/f/movaaddj" method="POST">
+                <div class="mb-3 " style="width: fit-content;">
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label ">Name *</label>
+                        <input type="text" id="nameInput" name="name" class="form-control" style="width:fit-content" required>
+                    </div>
+                    <div>
+                        <label for="emailInput" class="form-label">Email *</label>
+                        <input type="email" id="emailInput" name="email" class="form-control" style="width:fit-content"
+                            required>
+                    </div>
+                </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label ">Name *</label>
-                    <input type="text" id="nameInput" class="form-control" style="width:fit-content" >
+                    <label for="messageInput" class="form-label">Message *</label>
+                    <textarea class="form-control" id="messageInput" name="message" rows="3" required></textarea>
                 </div>
-                <div >
-                    <label for="exampleFormControlInput1" class="form-label">Email *</label>
-                    <input type="email" id="emailInput" class="form-control"  style="width:fit-content">
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message *</label>
-                <textarea class="form-control" id="messageInput" rows="3"></textarea>
-            </div>
-            <button class="btn btn-md btn-outline-primary" id="send-button" style="width: fit-content;">Send</button>
+                <button type="submit" class="btn btn-md btn-outline-primary" id="send-button"
+                    style="width: fit-content;">Send</button>
+                <p id="my-form-status"></p>
+            </form>
         </div>
+
     </div>
 
     <footer class="contact-footer my-5 mx-5 border-top">
-        <p class=" text-body-secondary pt-5">Made with 💚 by Erica (2023)</p>
+        <p class=" text-body-secondary pt-5">Made with 💚 by Erica (2024)</p>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
     <script src="contact.js"></script>
 </body>
 </html>
